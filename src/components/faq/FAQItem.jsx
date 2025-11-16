@@ -15,7 +15,7 @@ export default function FAQItem({ question, answer }) {
         </span>
 
                 <span
-                    className={`text-2xl font-light transition-transform duration-200 text-[#1D4645]
+                    className={`text-2xl font-light transition-transform duration-200 text-[#1D4645] cursor-pointer
             ${open ? "rotate-45" : ""}`}
                 >
           +
