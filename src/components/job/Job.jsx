@@ -28,19 +28,19 @@ const Job = () => {
 
 
     return (
-        <div className="bg-[#1d4645] job__page flex items-center justify-center">
-            <div className="container flex flex-col gap-10 py-16">
-                <h2 className="font-bold text-white text-4xl">Simple process to find a job</h2>
-                <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 ">
+        <div className="bg-[#1d4645] job__page flex items-center justify-center py-12 md:py-16 lg:py-20">
+            <div className="container flex flex-col gap-8 md:gap-10">
+                <h2 className="font-bold text-white text-2xl md:text-3xl lg:text-4xl">Simple process to find a job</h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
                     {jobCards.map((card)=>(
-                        <div key={card.title} className="w-[380px] flex flex-col gap-6">
+                        <div key={card.title} className="w-full max-w-[380px] mx-auto lg:mx-0 flex flex-col gap-4 md:gap-6">
                             <div className="flex justify-between items-center">
-                                <img src={card.icon} alt="card__logo__number"/>
-                                {card.line && <img src={card.line} alt="card__logo__line"/>}
+                                <img src={card.icon} alt="card__logo__number" className="w-20 h-auto md:w-auto md:h-auto object-contain"/>
+                                {card.line && <img src={card.line} alt="card__logo__line" className="hidden md:block"/>}
                             </div>
                            <div>
-                               <h2 className="text-2xl text-white font-semibold">{card.title}</h2>
-                               <p className="tracking-wide max-w-[356px] mt-4 text-[#D9E8E7]">{card.desc}</p>
+                               <h2 className="text-xl md:text-2xl text-white font-semibold">{card.title}</h2>
+                               <p className="tracking-wide max-w-full md:max-w-[356px] mt-3 md:mt-4 text-sm md:text-base text-[#D9E8E7]">{card.desc}</p>
                            </div>
                         </div>
                     ))}

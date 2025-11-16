@@ -34,14 +34,14 @@ export default function FAQList() {
     ];
 
     return (
-        <div className="container flex justify-between py-40 ">
-            <div className="max-w-xl w-full">
-                <h2 className="text-4xl font-bold">Frequently asked questions</h2>
+        <div className="container flex flex-col lg:flex-row justify-between gap-8 md:gap-12 py-12 md:py-20 lg:py-24">
+            <div className="max-w-full lg:max-w-xl w-full">
+                <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-6">Frequently asked questions</h2>
                 {faqs.map((item, i) => (
                     <FAQItem key={i} question={item.question} answer={item.answer} />
                 ))}
             </div>
-           <div className="w-[580px] h-[652px] bg-[url('/assets/images/faq__card.jpg')] bg-cover bg-center rounded">
+           <div className="w-full lg:w-[48%] h-[300px] md:h-[400px] lg:h-[652px] bg-[url('/assets/images/faq__card.jpg')] bg-cover bg-center rounded mt-6 lg:mt-0">
            </div>
         </div>
     );

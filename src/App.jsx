@@ -21,17 +21,37 @@ function App() {
                 <Navbar/>
               <Hero/>
           </header>
-          <main>
-              <Prepare/>
-              <Job/>
-              <Join/>
-              <Story/>
-              <Get/>
-              <Explore/>
-              <Free/>
-              <Team/>
-              <FAQList/>
-              <FooterBanner/>
+          <main className="flex flex-col gap-12 md:gap-16 lg:gap-20">
+              <section className="pt-12 md:pt-16 lg:pt-20">
+                  <Prepare/>
+              </section>
+              <section>
+                  <Job/>
+              </section>
+              <section>
+                  <Join/>
+              </section>
+              <section>
+                  <Story/>
+              </section>
+              <section>
+                  <Get/>
+              </section>
+              <section>
+                  <Explore/>
+              </section>
+              <section>
+                  <Free/>
+              </section>
+              <section>
+                  <Team/>
+              </section>
+              <section>
+                  <FAQList/>
+              </section>
+              <section>
+                  <FooterBanner/>
+              </section>
           </main>
           <footer>
               <Footer/>

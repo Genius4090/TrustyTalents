@@ -27,22 +27,22 @@ const Team = () => {
     ]
 
     return (
-        <div className="container h-[620px] py-10 flex flex-col gap-2">
-           <h2 className="font-bold text-3xl">Meet our team</h2>
-            <p className="text-lg text-[#475467] max-w-[880px]">A group of dedicated experts working to make recruitment smarter and more efficient, connecting top talent with great opportunities</p>
-            <div className="grid grid-cols-3 w-full gap-5 mt-3">
+        <div className="container min-h-auto py-10 md:py-12 lg:py-16 flex flex-col gap-4 md:gap-6">
+           <h2 className="font-bold text-2xl md:text-3xl">Meet our team</h2>
+            <p className="text-base md:text-lg text-[#475467] max-w-[880px]">A group of dedicated experts working to make recruitment smarter and more efficient, connecting top talent with great opportunities</p>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-6 md:gap-8 mt-4 md:mt-6">
                 {teamMembers.map((item)=>(
-                    <div key={item.fullname} className="flex flex-col justify-center items-center gap-5">
-                        <img src={item.image} alt="team__member" className="rounded"/>
-                        <div className="w-full ">
-                           <div className="flex items-center justify-between">
-                               <h3 className="text-2xl font-semibold">{item.fullname}</h3>
-                               <span className="flex items-center justify-center gap-2">
-                                <a href="#" className="text-[#7E8897] text-xl mt-0.5"><IoMail /></a>
-                                <a href="#" className="text-[#7E8897] text-xl"><FaLinkedinIn /></a>
+                    <div key={item.fullname} className="flex flex-col justify-start items-start gap-4 md:gap-5">
+                        <img src={item.image} alt="team__member" className="rounded w-full h-auto"/>
+                        <div className="w-full">
+                           <div className="flex items-center justify-between gap-2">
+                               <h3 className="text-xl md:text-2xl font-semibold">{item.fullname}</h3>
+                               <span className="flex items-center justify-center gap-2 flex-shrink-0">
+                                <a href="#" className="text-[#7E8897] text-lg md:text-xl mt-0.5"><IoMail /></a>
+                                <a href="#" className="text-[#7E8897] text-lg md:text-xl"><FaLinkedinIn /></a>
                             </span>
                            </div>
-                            <p className="text-[#555555] mt-1">{item.job}</p>
+                            <p className="text-sm md:text-base text-[#555555] mt-1">{item.job}</p>
                         </div>
                     </div>
                 ))}

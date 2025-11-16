@@ -30,26 +30,26 @@ const Story = () => {
     ]
 
     return (
-            <div className="items-start container flex flex-col gap-4 py-36 md:items-center lg:items-start">
-                <h2 className="font-bold text-4xl">Success Stories</h2>
-                <p className="text-lg text-[#475467]">Real professionals who started their career with TrustyTalents.</p>
-                <div className="grid gap-6 lg:grid-cols-3 md:grid-cols-2 ">
+            <div className="items-start container flex flex-col gap-4 md:gap-6 py-12 md:py-20 lg:py-24 md:items-center lg:items-start">
+                <h2 className="font-bold text-2xl md:text-3xl lg:text-4xl">Success Stories</h2>
+                <p className="text-base md:text-lg text-[#475467]">Real professionals who started their career with TrustyTalents.</p>
+                <div className="grid gap-6 lg:grid-cols-3 md:grid-cols-2 w-full">
                 {storyCards.map((card) => (
                         <div
                             key={card.username}
-                            className="max-w-[380px] h-[550px] mx-auto relative rounded overflow-hidden flex flex-col justify-end px-4 pb-4"
+                            className="w-full max-w-[380px] min-h-[400px] md:h-[500px] lg:h-[550px] mx-auto relative rounded overflow-hidden flex flex-col justify-end px-4 pb-4"
                             style={{ backgroundImage: `url(${card.bcg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
                         >
                             {/* Bottom gradient overlay */}
                             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent"></div>
 
                             {/* Content on top of overlay */}
-                            <div className="relative flex flex-col items-start justify-end gap-4 text-white ">
-                                <img src={card.icon} alt="story__logo" className="w-9 h-9" />
-                                <p className="text-lg max-w-[348px] h-[87px] tracking-wide">{card.desc}</p>
+                            <div className="relative flex flex-col items-start justify-end gap-3 md:gap-4 text-white ">
+                                <img src={card.icon} alt="story__logo" className="w-8 h-8 md:w-9 md:h-9" />
+                                <p className="text-base md:text-lg max-w-full md:max-w-[348px] min-h-[60px] md:min-h-[87px] tracking-wide">{card.desc}</p>
                                 <div>
-                                    <h3 className="font-semibold">{card.username}</h3>
-                                    <span className="text-sm text-white/80">{card.job}</span>
+                                    <h3 className="font-semibold text-base md:text-lg">{card.username}</h3>
+                                    <span className="text-xs md:text-sm text-white/80">{card.job}</span>
                                 </div>
                             </div>
                         </div>
