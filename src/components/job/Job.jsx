@@ -1,5 +1,5 @@
 import React from 'react'
-import './job.css'
+import './Job.css'
 import cardIcon1 from '/assets/images/job__logo__1.png'
 import cardIcon2 from '/assets/images/job__logo__2.png'
 import cardIcon3 from '/assets/images/job__logo__3.png'
