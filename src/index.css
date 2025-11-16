@@ -1,0 +1,31 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+    --brand: #009483;
+}
+
+ /*GLOBAL STYLES */
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fff; /* optional default bg */
+    color: #000; /* optional default text */
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+   padding: 0 4px;
+}
+
+

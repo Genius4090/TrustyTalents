@@ -1,0 +1,8 @@
+.job__page {
+    background-color: #1d4645;
+    background-image: url('/assets/images/green__bcg__line__left.svg'),
+    url('/assets/images/green__bcg__line__right.svg');
+    background-position: left top, right bottom;
+    background-size: auto, auto; /* adjust if needed */
+    background-repeat: no-repeat, no-repeat;
+}
